@@ -9,3 +9,17 @@ const persoas = [
 ];
 
 //a. Crea un novo array que conteña só as persoas maiores de idade.
+const mayores = persoas.filter((persoa) => persoa.idade >= 18);
+console.log(mayores);
+
+//b. Crea un novo array que conteña os nomes (só os nomes) de todas as persoas.
+const nombres = persoas.map((persoa) => persoa.nome);
+console.log(nombres);
+
+//c. Crea un novo array que conteña, en maiúsculas, os nomes das persoas maiores de idade
+
+const mayusculas = persoas
+  .filter((persoa) => persoa.idade >= 18)
+  .map((persoa) => persoa.nome.toUpperCase());
+
+console.log(mayusculas);
