@@ -23,3 +23,7 @@ const mayusculas = persoas
   .map((persoa) => persoa.nome.toUpperCase());
 
 console.log(mayusculas);
+
+//d  Crea un novo array que conteña obxectos só co id e o nome das persoas.
+
+const idnombre =
