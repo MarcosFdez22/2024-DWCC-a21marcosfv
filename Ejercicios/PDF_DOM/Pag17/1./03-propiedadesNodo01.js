@@ -14,4 +14,14 @@ console.log(sexo.querySelector("input:checked").getAttribute("value"));
 
 // O texto de cada un dos elementos <li>
 const lis = document.querySelectorAll("li");
-console.log(lis);
+lis.forEach((li) => console.log(li.innerText));
+
+// Indica cantos elementos <li> hai.
+const lis2 = document.querySelectorAll("li").length;
+console.log("Son " + lis2);
+
+//Indica o valor do atributo data-widget-name
+const widget = document
+  .querySelector("[data-widget-name]")
+  .getAttribute("data-widget-name");
+console.log(widget);
