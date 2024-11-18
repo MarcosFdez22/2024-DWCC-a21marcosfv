@@ -16,3 +16,14 @@ let arbore = {
     },
   },
 };
+
+let claves = Object.keys(arbore);
+console.log(arbore);
+
+for (let i = 0; i < claves.length; i++) {
+  let clave = claves[i];
+  console.log(arbore[clave]);
+}
+
+let ul1 = document.createElement("ul");
+let li1 = document.createElement("li");
