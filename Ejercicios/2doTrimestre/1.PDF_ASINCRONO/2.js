@@ -9,14 +9,17 @@ const start = document.getElementById("start");
 const end = document.getElementById("end");
 
 let inter = "";
+
 function cor() {
-  inter = setInterval(() => {
-    if (h1.style.color == "red") {
-      h1.style.color = "blue";
-    } else {
-      h1.style.color = "red";
-    }
-  }, 1000);
+  if (!inter) {
+    inter = setInterval(() => {
+      if (h1.style.color == "red") {
+        h1.style.color = "blue";
+      } else {
+        h1.style.color = "red";
+      }
+    }, 1000);
+  }
 }
 
 start.addEventListener("click", cor);
