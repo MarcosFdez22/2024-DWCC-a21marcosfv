@@ -40,6 +40,9 @@ function reqListener() {
   console.log(cadena_nombres);
   console.log(cadena_genero);
 }
+//
+//
+
 const xhr = new XMLHttpRequest();
 xhr.open("GET", "sample.json");
 xhr.responseType = "json";
