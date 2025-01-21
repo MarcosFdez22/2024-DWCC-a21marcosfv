@@ -1,5 +1,5 @@
-function showHeroDetails() {
-  const objeto = this.response;
+function showHeroDetails(data) {
+  const objeto = data;
 
   const header = document.querySelector("header");
   const h1 = document.createElement("h1");
@@ -39,8 +39,9 @@ function showHeroDetails() {
     articl.append(ul);
   }
 }
-const xhr = new XMLHttpRequest();
-xhr.open("GET", "superheroes.json");
-xhr.responseType = "json";
-xhr.send();
-xhr.addEventListener("load", showHeroDetails);
+
+fetch("superheroes.json")
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => showHeroDetails(data));

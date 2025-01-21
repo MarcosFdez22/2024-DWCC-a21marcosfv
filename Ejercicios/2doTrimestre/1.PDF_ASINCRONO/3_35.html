@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="3_35.js" defer></script>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #d6e6ff;
+        font-family: Arial, sans-serif;
+      }
+      .rectangulo {
+        width: 300px;
+        height: 450px;
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        position: relative;
+      }
+      .cuadrado {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(245, 245, 245);
+        position: absolute;
+        top: 20px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .rectangulo img {
+        max-width: 80%;
+        max-height: 70%;
+        border-radius: 5px;
+        position: relative;
+        z-index: 1;
+        margin-top: 40px;
+      }
+      .rectangulo .texto {
+        margin-top: 40px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+      }
+      .rectangulo .texto p {
+        margin: 5px 0;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      img {
+        width: 180px;
+        height: 180px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="rectangulo">
+      <div class="cuadrado"></div>
+      <img src="" alt="Imagen" id="imagen" />
+      <div class="texto" id="texto">
+        <p id="name"></p>
+        <ul></ul>
+      </div>
+      <br /><br />
+      <input type="button" value="Nuevo Pokemon" />
+    </div>
+  </body>
+</html>
