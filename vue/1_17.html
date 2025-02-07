@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="module" src="1_17.js" defer></script>
+  </head>
+  <body>
+    <div id="app">
+      <p>{{ obj.name }}</p>
+      <p>{{ obj.date }}</p>
+      <button @click="sumar">Sumar 5</button>
+      <p><img :src="obj.imagen" width="50px" /></p>
+      <p><input type="text" :value="obj.name" /></p>
+      <p>{{ obj.contador }}</p>
+      <p>
+        <button @click="incrementar">INCREMENTAR</button
+        ><button @click="decrementar">DECREMENTAR</button>
+      </p>
+    </div>
+  </body>
+</html>
